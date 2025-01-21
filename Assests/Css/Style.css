@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,::before,::after{ box-sizing: border-box; margin: 0;}
+a{text-decoration: none;}
+img{vertical-align: bottom;}
+button{padding: 0; border: none; cursor: pointer;}
+ul{list-style: none; padding: 0;}
+label{display: block;}
+.two{display: none;}
+html{
+    font-size: 15px;
+    --blue:#1a9bdc;
+    --green:#37c3a8;
+    --blue-L:#43b1d2;
+    --ff:'Open Sans';
+   
+}
+
+body{
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col-"]{ flex: 1 0 auto; padding: 0 1rem;}
+
+.col-1{ flex-basis: 8.33%; max-width: 8.33%;}
+.col-2{ flex-basis: 16.66%; max-width: 16.66%;}
+.col-3{ flex-basis: 25%; max-width: 25%;}
+.col-4{ flex-basis: 33.33%; max-width: 33.33%;}
+.col-5{ flex-basis: 41.66%; max-width: 41.66%;}
+.col-6{ flex-basis: 50%; max-width: 50%;}
+.col-7{ flex-basis: 58.33%; max-width: 58.33%;}
+.col-8{ flex-basis: 66.66%; max-width: 66.66%;}
+.col-9{ flex-basis: 75%; max-width: 75%;}
+.col-10{ flex-basis: 83.33%; max-width: 83.33%;}
+.col-11{ flex-basis: 91.66%; max-width: 91.66%;}
+.col-12{ flex-basis: 100%; max-width: 100%;}
+.flex{display: flex;}
+.text-center{text-align: center;}
+.align-center{align-items: center;}
+.align-cont-center{align-content: center;}
+.justify-betwen{justify-content: space-between;}
+.justify-itme-cent{justify-items: center;}
+.justify-conten-cent{justify-content: center;}
+.place-center{place-items: center;}
+.gap-y-45{gap: 3rem 0;}
+hr{border: 2px solid #ececec; width: 100%;}
+
+.burger {position: absolute; cursor: pointer; right: 5%; top: 15px; display: none;}
+.line {display: block; width: 45px; height: 6px; margin: 5px 3px; color: #fff; background: #000; transform-origin: right center; }
+
+
+/*=========== Custom CSS ============*/
+header{padding-top: 35px;}
+.contact-1{margin-bottom: 20px;}
+.contact-1 i{width: 41px; height: 41px; background:var(--blue); border-radius: 50%; font-size: 23px; color: #fff; padding: 10px; display: grid; place-items: center; margin-right: 10px;}
+.contact-1 p{font-size: 15px; color: #6a6a6a;}
+.contact-1 .p1{font-size: 14px; color: #6a6a6a;}
+
+nav ul li{margin-right: 23px;}
+nav ul li a{font-size: 20px; color: #6c6c6c; font-weight: 600; font-family: var(--ff);}
+nav li a{ display: block; line-height: 80px; padding: 0 7px 0 0;}
+nav li a:hover{color: #000;} nav a:active{color: var(--blue);}
+nav .social{float: right;}
+nav .social a{font-size: 23px; line-height: 80px; margin-right: 28px; color: #191919;}
+nav .social a:hover{color: var(--blue);}
+nav .social a:active{color: #ff0000;} 
+
+.banner{background: url(../images/wrap-1-img-1.webp) no-repeat center/cover;}
+.banner .text{margin-top: 190px;}
+.banner h2{font-size: 3rem; font-family: 'Montserrat'; font-weight: 700;  color: #474747; margin-bottom: 38px;}
+.banner p{font-family: var(--ff); margin: 0 0 48px 0; color: #3f3f3f;}
+.btn{ padding: 16px 27px; margin-bottom: 80px; background: var(--blue); border-radius: 50px; color: #fff; font-size: 18px; box-shadow: 0px 20px 60px -19px #000;  font-family: "Lato", sans-serif;}
+.banner .btn:hover{background: var(--green);}
+.banner .hide{display: none;}
+
+.wrap-1{background: var(--blue-L);  color:#fff;}
+.wrap-1 .best-treat{text-align:center; margin-top: 77px; }
+.wrap-1 .best-treat i{width: 75px; height: 75px; border-radius: 50%; background: #fff; font-size: 40px; color: #000; place-content: center; }
+.wrap-1 .best-treat h2{font-size: 29px; font-family:'Montserrat'; font-weight: 700; margin: 25px 0 30px 0;}
+.wrap-1 .best-treat p{line-height: 25px; margin-bottom: 50px; font-size: 16px;}
+.wrap-1 .col-3:hover{background: var(--green);}
+
+.wrap-2 h2{font-size: 3rem; font-family: 'Montserrat'; font-weight:700; margin: 112px 0 20px 0; color: #494949;}
+.wrap-2 p{padding: 0 60px; font-family: var(--ff); color: #7c7c7c;}
+.professional{margin-top: 120px;}
+.professional i{width: 75px; height:75px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 40px; place-content: center; text-align: center;}
+.professional h3{font-size: 30px; font-family: 'Montserrat'; margin-left: 19px; align-content: center; color: #6f6f6e;}
+.professional p{padding: 0; margin: 20px 0; line-height: 25px; color: #6a6a6a;}
+.wrap-2 .nurse{margin-top: 32px;}
+/* .wrap-2 img{width: 100%; height: 598px; object-fit: cover;} */
+.professional .pro-2, .pro-4{margin-top: 98px;}
+
+.wrap-3{background: url(../images/wrap-4-img-back.webp) no-repeat center/cover;}
+.progress{color: #fff;}
+.progress i{font-size: 50px; margin-top: 153px; margin-bottom: 47px;}
+.progress p{font-size: 60px; font-family: 'Montserrat'; font-weight:500; margin-bottom: 23px;}
+.progress hr{width: 100px; border: 5px solid #fff; margin-left: 80px; margin-bottom: 27px;}
+.progress h3{font-size: 25px; font-family: 'Montserrat'; margin-bottom: 150px;}
+
+.wrap-4 .work-2 h2, .wrap-4 .creat h2{margin-top: 100px; margin-bottom: 40px; font-size: 45px; font-weight: 700;  font-family: 'Montserrat'; color: #494949;}
+.work-2 p, .creat p{color: #6a6a6a; line-height: 25px; font-family: var(--ff); margin-bottom: 50px;}
+.wrap-4 .image-1 img{width: 100%; height: 210px; object-fit: cover; margin-bottom: 36px;}
+.wrap-4 .image-1 .p2{font-size: 20px; font-weight: 500; margin-bottom: 5px; color: #6f6f6e;}
+.image-1 small{margin-bottom: 27px; color: #0087be; font-weight: 600;}
+.wrap-4 .image-1 .p3{margin-top: 27px; color: #6a6a6a;}
+.wrap-4 .col-8 .btn{  padding: 10px 28px; background: #0087be; box-shadow: 0px 13px 35px -13px #000; border-radius: 20px; color: #fff; font-size: 16px; font-family: "Lato", sans-serif; margin: 53px 0 100px 280px; text-align: center;}
+.wrap-4 .accordian{background: #0087be; color: #fff; padding: 5px 0; border-radius: 50px; margin-bottom: 20px;}
+.wrap-4 span{font-size: 40px; margin: 0 20px 0 5px;}
+.wrap-4 .accordian h3{font-size: 20px; font-family: 'Montserrat'; font-weight: 500;}
+.wrap-4 .acc p{margin-bottom: 40px; color: #494949;}
+
+.wrap-5{background: url(../images/wrap-6-img-back.webp) no-repeat center/cover; padding: 95px 0; color: #fff;}
+.wrap-5 .gallery h2{font-size: 45px; font-family: 'Montserrat'; font-weight:700; margin-bottom: 45px;}
+.wrap-5 p{font-family: var(--ff); line-height: 30px; margin-bottom: 54px;}
+.wrap-5 .col-4 img{width: 100%; height: 235px; object-fit: cover;}
+
+.wrap-6{padding: 150px 0 135px 0;}
+.wrap-6 h2{font-size: 45px; font-family: 'Montserrat'; font-weight:700; margin-bottom: 45px; color: #494949;}
+.wrap-6 .team p{margin-bottom: 84px; color: #6a6a6a;}
+.wrap-6 .profile img{border-radius: 50%; width: 100%; height: 275px; object-fit: cover;}
+.wrap-6 .text-2 h3{font-size: 25px; font-family: 'Montserrat'; font-weight: 500; color: #6f6f6e; margin: 25px 0 16px;}
+.wrap-6 .text-2 p{font-size: 18px; color: #6f6f6e; font-family: var(--ff); font-weight: 500;}
+.wrap-6 .social-2{margin-top: 35px;}
+.wrap-6 .social-2 a{font-size: 25px; color: #0087be; margin: 0 5px;}
+
+.wrap-7{background: #e2e2e2; padding: 45px 0;}
+.wrap-7 .offer p{font-size: 30px; font-weight: 600; font-family: 'Montserrat'; margin-right: 77px;}
+.wrap-7 .btn{ padding: 10px 28px; margin: 0; background: #0087be; box-shadow: 0px 16px 28px -16px #000; border-radius: 20px; color: #fff; font-size: 16px; font-family: "Lato", sans-serif; text-align: center;}
+
+.wrap-8{background: #171717; color: #fff; padding: 110px 0;}
+.wrap-8 .contact-2 h2, .wrap-8 .about h2, .wrap-8 .service h2, .wrap-8 .enquiry h2{font-size: 22px; font-family: var(--ff); font-weight: 700; margin-bottom: 70px;}
+.wrap-8 .mail, .wrap-8 .call, .wrap-8 .add{margin-bottom: 60px;}
+.wrap-8 .call i{font-size: 35px; margin-right: 49px; color: #8d8d8d;}
+.wrap-8 .mail i, .wrap-8 .add i{font-size: 35px; margin-right: 43px; color: #8d8d8d;}
+.wrap-8 .mail p, .wrap-8 .call p, .wrap-8 address{font-size: 17px; color: #8d8d8d;}
+.social-3 a{font-size: 25px; margin-right: 26px; color: #fff;}
+.social-3 a:hover{color: var(--blue);}
+.wrap-8 .link p, .wrap-8 .work-3 p{margin-bottom: 26px;}
+.wrap-8 .link p a, .wrap-8 .work-3 p a{color: #8d8d8d;}
+.wrap-8 .link p::before, .wrap-8 .work-3 p::before{
+    content: '';
+    display: inline-block;
+    border: 6px solid ;
+    border-color: transparent transparent transparent #0087be;
+    margin-right: 15px;
+}
+.wrap-8 form input{width: 100%; padding: 10px 0 15px 0; border: none; outline: none; margin-bottom: 20px; background: #171717; border-bottom: 2px solid #5f5f5f; color: #5f5f5f;}
+.wrap-8 form textarea{width: 100%; padding: 10px 0; border: none; outline: none; resize: none; margin-bottom: 24px; background: #171717; border-bottom: 2px solid #5f5f5f; color: #5f5f5f; height: 107px;}
+.wrap-8 .btn{ padding: 12px 36px; background: #0087be; border-radius: 50px; color: #fff; font-size: 13px; font-family: "Lato", sans-serif; text-align: center;}
+
+footer{background: #1a1a1a; padding: 40px 0; color: #918e8e; line-height: 25px;}
+
+
+
+
+
+/* ========== Responsive ========== */
+
+@media screen and (max-width:1220px) {
+    .contact-1 p {font-size: 17px;}
+    .contact .p1 {font-size: 13px;}
+    nav ul li {margin-right: 11px;}
+    nav ul li a{font-weight:400;}
+    .banner h2{font-size: 2rem;}
+    .wrap-1 .best-treat h2 {font-size: 23px;}
+    .wrap-2 img {margin-left: -20px;}
+    .social-3 a{margin-right: 15px;}
+    .progress hr {width: 85px; margin-left: 66px;}
+    .wrap-8 .mail p, .wrap-8 .call p, .wrap-8 address {font-size: 16px;}
+    .wrap-6 .profile img {border-radius: 50%; width: 100%; height: 100%;}
+    .wrap-7 .offer p {font-size: 27px; margin-right: 0;}
+    .wrap-7 .btn{width: 150px; float: right;}
+}
+
+@media screen and (max-width:980px){
+    
+    .col-t-6{ flex-basis: 50%; max-width: 50%;}
+    .col-t-12{ flex-basis: 100%; max-width: 100%;}
+    .contact-1 p {font-size: 16px;}
+    .contact-1 .p1 {font-size: 12px;}
+    nav ul li{margin-right: 12px;}
+    nav ul li a{font-size: 17px; padding: 0; font-weight: 500;}
+    nav .social a {font-size: 20px;}
+    .banner{width: 100%; height: 350px;}
+    .banner .text{margin-top: 75px; text-align: center;}
+    .banner h2{font-size: 25px; margin-bottom: 25px;}
+    .banner p{margin-bottom: 18px; font-size: 14px;}
+    .wrap-1 .best-treat h2 {font-size: 18px; margin: 25px 0;}
+    .professional h3 {font-size: 22px;}
+    .progress hr {margin-left: 40px;}
+    .wrap-2 .nurse {margin-top: 74px; width: 284px; height: 555px;}
+    .wrap-4 .work-2 h2, .wrap-4 .creat h2 {font-size: 36px;}
+    .wrap-4 span {margin: 0 10px 0 5px}
+    .wrap-6 .row-fst{margin-bottom: 70px;}
+    .wrap-6 .profile img {border-radius: 50%; width: 350px; height: 350px;}
+    .wrap-7 .offer p {font-size: 21px;}
+    .wrap-8 .contact-2 h2, .wrap-8 .about h2, .wrap-8 .service h2, .wrap-8 .enquiry h2 {font-size: 26px;}
+    .wrap-8 .mail i, .wrap-8 .add i {margin-right: 43px;}
+    .wrap-8 .call i {margin-right: 49px;}
+    .wrap-8 .mail p, .wrap-8 .call p, .wrap-8 address {font-size: 20px;}
+    .wrap-8 .link p, .wrap-8 .work-3 p {font-size: 20px;}
+    .social-3 a {margin-right: 34px; font-size: 23px;}
+    .wrap-8 .service, .wrap-8 .enquiry{margin-top: 100px;}
+    .wrap-8 .enquiry .btn{margin-bottom: 0; font-size: 18px;}
+    .wrap-8 form input, .wrap-8 form textarea{font-size: 20px;}
+}
+
+@media screen and (max-width:767px){
+    .col-m-6{ flex-basis: 50%; max-width: 50%;}
+    .col-m-12{ flex-basis: 100%; max-width: 100%;}
+    .banner{width: 100%; height: 350px;}
+    nav ul li a {font-size: 15px;}
+    .contact-1 i {
+        width: 35px;
+        height: 35px;
+        padding: 6px;}
+    .contact-1 p {font-size: 7px;}
+    .contact-1 .p1 {font-size: 6px;}
+    .banner .text {margin-top: 50px; text-align: center;}
+    .wrap-1 .best-treat h2 {font-size: 17px;}
+    .wrap-1 .best-treat i {width: 70px; height: 70px; border-radius: 50%; background: #fff; font-size: 30px; color: #000; place-content: center;}
+    .professional i {width: 65px; height: 65px; font-size: 35px;}
+    .professional h3 {font-size: 22px; margin-left: 11px;}
+    .wrap-2 img {margin-left: -32px;}
+    .progress p {font-size: 50px;}
+    .progress h3 {font-size: 23px;}
+    .wrap-4 .col-8 .btn {margin-bottom: 0;}
+    .wrap-4 .creat h2 { margin-bottom: 20px;}
+    
+   
+    
+}
+
+@media screen and (max-width: 460px) {
+    .col-p-6{ flex-basis: 50%; max-width: 50%;}
+    .col-p-12{ flex-basis: 100%; max-width: 100%;}
+    .two{display: block;}
+    header{padding-top: 12px;}
+    header h1 img{margin-bottom: 10px;}
+    .contact-1{display: none;}
+    nav{display: none;}
+    .burger{display: block;}
+    .hr-1{display: none;}
+    .banner{width: 100%; height: 200px;}
+    .banner .text {margin-top: 25px;}
+    .banner h2 {font-size: 13px; margin-bottom: 10px;}
+    .banner p {margin-bottom: 10px; font-size: 9px;}
+    .banner .btn {padding: 8px 15px; margin-bottom: 0; font-size: 10px;}
+    .wrap-1 .best-treat{margin: 40px 0 0 0;}
+    .wrap-1 .best-treat h2{font-size: 16px;}
+    .wrap-1 .best-treat p {margin-bottom: 30px;}
+    .wrap-2 h2 {font-size: 2rem;}
+    .wrap-2 p {padding: 0;}
+    .wrap-2 .nurse{margin-left: 0; height:auto;}
+    .wrap-2 .professional{text-align: center;}
+    .professional .pro-1,.professional .pro-2,.professional .pro-3,.professional .pro-4{justify-content: center;}
+    .progress hr {margin-left: 25px;}
+    .progress i {margin-top: 75px;}
+    .progress h3 {margin-bottom: 45px;}
+    .progress h3 {font-size: 20px;}
+    .progress p {font-size: 45px;}
+    .progress hr {width: 75px; margin-left: 39px;}
+    .wrap-4 .col-8 .btn {margin: 53px 0 0 0;}
+    .wrap-4 .two-img{display: block;}
+    .wrap-4 .image-1 .p3 {margin-bottom: 30px;}
+    .wrap-4 .col-8 .btn {margin: 23px 0 0 0;}
+    .wrap-6 .row-scnd{margin-bottom: 70px;}
+    .wrap-6 .profile img {border-radius: 50%; width: 320px; height: 320px; object-fit: cover;}
+    .wrap-7{padding: 45px 0 20px 0;}
+    .wrap-7 .offer p{font-size: 15px; text-align: center;}
+    .wrap-7 .btn {padding: 8px 18px; font-size: 13px; width:auto; margin: 30px 0 10px 0; text-align: center; float: none;}
+    .wrap-7 .col-p-12{text-align: center;}
+    .wrap-8 .about{margin-top: 100px;}
+    .wrap-8 .mail p, .wrap-8 .call p, .wrap-8 address {font-size: 18px;}
+    .social-3 a {margin-right: 34px; font-size: 20px;}
+    .wrap-8 .link p, .wrap-8 .work-3 p {font-size: 18px;}
+    .wrap-8 form input, .wrap-8 form textarea {font-size: 18px;}
+    .wrap-8 .btn {padding: 10px 25px;}
+    .wrap-8 .enquiry .btn {font-size: 15px;}
+    footer p{font-size: 13px;}
+}
+
