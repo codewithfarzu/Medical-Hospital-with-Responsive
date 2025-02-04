@@ -8,7 +8,7 @@ ul{list-style: none; padding: 0;}
 label{display: block;}
 .two{display: none;}
 html{
-    font-size: 15px;
+    font-size: 16px;
     --blue:#1a9bdc;
     --green:#37c3a8;
     --blue-L:#43b1d2;
@@ -17,7 +17,7 @@ html{
 }
 
 body{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .container{
@@ -47,6 +47,7 @@ body{
 .col-11{ flex-basis: 91.66%; max-width: 91.66%;}
 .col-12{ flex-basis: 100%; max-width: 100%;}
 .flex{display: flex;}
+.img-resp{max-width: 100%; height: auto;}
 .text-center{text-align: center;}
 .align-center{align-items: center;}
 .align-cont-center{align-content: center;}
@@ -79,7 +80,7 @@ nav .social a:active{color: #ff0000;}
 
 .banner{background: url(../images/wrap-1-img-1.webp) no-repeat center/cover;}
 .banner .text{margin-top: 190px;}
-.banner h2{font-size: 3rem; font-family: 'Montserrat'; font-weight: 700;  color: #474747; margin-bottom: 38px;}
+.banner h2{font-size: 2.5rem; font-family: 'Montserrat'; font-weight: 700;  color: #474747; margin-bottom: 38px;}
 .banner p{font-family: var(--ff); margin: 0 0 48px 0; color: #3f3f3f;}
 .btn{ padding: 16px 27px; margin-bottom: 80px; background: var(--blue); border-radius: 50px; color: #fff; font-size: 18px; box-shadow: 0px 20px 60px -19px #000;  font-family: "Lato", sans-serif;}
 .banner .btn:hover{background: var(--green);}
@@ -89,33 +90,35 @@ nav .social a:active{color: #ff0000;}
 .wrap-1 .best-treat{text-align:center; margin-top: 77px; }
 .wrap-1 .best-treat i{width: 75px; height: 75px; border-radius: 50%; background: #fff; font-size: 40px; color: #000; place-content: center; }
 .wrap-1 .best-treat h2{font-size: 29px; font-family:'Montserrat'; font-weight: 700; margin: 25px 0 30px 0;}
-.wrap-1 .best-treat p{line-height: 25px; margin-bottom: 50px; font-size: 16px;}
+.wrap-1 .best-treat p{line-height: 25px; margin-bottom: 50px; font-size: 18px;}
 .wrap-1 .col-3:hover{background: var(--green);}
 
 .wrap-2 h2{font-size: 3rem; font-family: 'Montserrat'; font-weight:700; margin: 112px 0 20px 0; color: #494949;}
 .wrap-2 p{padding: 0 60px; font-family: var(--ff); color: #7c7c7c;}
-.professional{margin-top: 120px;}
+.professional{margin-top: 70px;}
 .professional i{width: 75px; height:75px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 40px; place-content: center; text-align: center;}
-.professional h3{font-size: 30px; font-family: 'Montserrat'; margin-left: 19px; align-content: center; color: #6f6f6e;}
+.professional h3{font-size: 32px; font-family: 'Montserrat'; margin-left: 19px; align-content: center; color: #6f6f6e;}
 .professional p{padding: 0; margin: 20px 0; line-height: 25px; color: #6a6a6a;}
-.wrap-2 .nurse{margin-top: 32px;}
+.wrap-2 .nurse{margin-top: 50px; height: auto;}
 /* .wrap-2 img{width: 100%; height: 598px; object-fit: cover;} */
 .professional .pro-2, .pro-4{margin-top: 98px;}
 
-.wrap-3{background: url(../images/wrap-4-img-back.webp) no-repeat center/cover;}
-.progress{color: #fff;}
-.progress i{font-size: 50px; margin-top: 153px; margin-bottom: 47px;}
+.wrap-3{background: url(../images/wrap-4-img-back.webp) no-repeat center/cover; width: 100%; height: auto; object-fit: cover;}
+.progress{color: #fff; margin: 100px 0;}
+.progress i{font-size: 50px; margin-bottom: 47px;}
 .progress p{font-size: 60px; font-family: 'Montserrat'; font-weight:500; margin-bottom: 23px;}
-.progress hr{width: 100px; border: 5px solid #fff; margin-left: 80px; margin-bottom: 27px;}
-.progress h3{font-size: 25px; font-family: 'Montserrat'; margin-bottom: 150px;}
+.progress hr{width: 100px; border: 5px solid #fff; margin: 0 auto; margin-bottom: 27px;}
+.progress h3{font-size: 25px; font-family: 'Montserrat'; margin-top: 30px;}
 
-.wrap-4 .work-2 h2, .wrap-4 .creat h2{margin-top: 100px; margin-bottom: 40px; font-size: 45px; font-weight: 700;  font-family: 'Montserrat'; color: #494949;}
+
+.wrap-4 .work-2 h2, .wrap-4 .creat h2{margin-bottom: 40px; font-size: 45px; font-weight: 700;  font-family: 'Montserrat'; color: #494949;}
+.wrap-4 .work-2, .wrap-4 .creat{margin-top: 100px;}
 .work-2 p, .creat p{color: #6a6a6a; line-height: 25px; font-family: var(--ff); margin-bottom: 50px;}
 .wrap-4 .image-1 img{width: 100%; height: 210px; object-fit: cover; margin-bottom: 36px;}
 .wrap-4 .image-1 .p2{font-size: 20px; font-weight: 500; margin-bottom: 5px; color: #6f6f6e;}
 .image-1 small{margin-bottom: 27px; color: #0087be; font-weight: 600;}
 .wrap-4 .image-1 .p3{margin-top: 27px; color: #6a6a6a;}
-.wrap-4 .col-8 .btn{  padding: 10px 28px; background: #0087be; box-shadow: 0px 13px 35px -13px #000; border-radius: 20px; color: #fff; font-size: 16px; font-family: "Lato", sans-serif; margin: 53px 0 100px 280px; text-align: center;}
+.wrap-4 .btn{  padding: 10px 28px; background: #0087be; box-shadow: 0px 13px 35px -13px #000; border-radius: 20px; color: #fff; font-size: 16px; font-family: "Lato", sans-serif; margin: 53px 0 100px 280px; text-align: center;}
 .wrap-4 .accordian{background: #0087be; color: #fff; padding: 5px 0; border-radius: 50px; margin-bottom: 20px;}
 .wrap-4 span{font-size: 40px; margin: 0 20px 0 5px;}
 .wrap-4 .accordian h3{font-size: 20px; font-family: 'Montserrat'; font-weight: 500;}
@@ -177,7 +180,7 @@ footer{background: #1a1a1a; padding: 40px 0; color: #918e8e; line-height: 25px;}
     .wrap-1 .best-treat h2 {font-size: 23px;}
     .wrap-2 img {margin-left: -20px;}
     .social-3 a{margin-right: 15px;}
-    .progress hr {width: 85px; margin-left: 66px;}
+    .progress hr {width: 85px; margin: 0 auto;}
     .wrap-8 .mail p, .wrap-8 .call p, .wrap-8 address {font-size: 16px;}
     .wrap-6 .profile img {border-radius: 50%; width: 100%; height: 100%;}
     .wrap-7 .offer p {font-size: 27px; margin-right: 0;}
@@ -198,14 +201,20 @@ footer{background: #1a1a1a; padding: 40px 0; color: #918e8e; line-height: 25px;}
     .banner h2{font-size: 25px; margin-bottom: 25px;}
     .banner p{margin-bottom: 18px; font-size: 14px;}
     .wrap-1 .best-treat h2 {font-size: 18px; margin: 25px 0;}
-    .professional h3 {font-size: 22px;}
-    .progress hr {margin-left: 40px;}
-    .wrap-2 .nurse {margin-top: 74px; width: 284px; height: 555px;}
+    .professional{margin-top: 70px;}
+    /* .professional h3 {font-size: 22px;} */
+    .progress hr {margin: 0 auto;}
+    .wrap-2 .nurse {margin-top: 30px;}
+    .wrap-4 .col-8{text-align: center;}
     .wrap-4 .work-2 h2, .wrap-4 .creat h2 {font-size: 36px;}
+    .wrap-4 .btn{margin: 53px 0 0 0;}
     .wrap-4 span {margin: 0 10px 0 5px}
-    .wrap-6 .row-fst{margin-bottom: 70px;}
+    .wrap-4 .accordian { margin-bottom: 40px;}
+    .wrap-6 .row{row-gap: 70px;}
     .wrap-6 .profile img {border-radius: 50%; width: 350px; height: 350px;}
-    .wrap-7 .offer p {font-size: 21px;}
+    .wrap-7 .offer p {font-size: 21px; text-align: center;}
+    .wrap-7 .button{text-align: center;}
+    .wrap-7 .btn{float: none; margin-top: 30px;}
     .wrap-8 .contact-2 h2, .wrap-8 .about h2, .wrap-8 .service h2, .wrap-8 .enquiry h2 {font-size: 26px;}
     .wrap-8 .mail i, .wrap-8 .add i {margin-right: 43px;}
     .wrap-8 .call i {margin-right: 49px;}
@@ -229,8 +238,9 @@ footer{background: #1a1a1a; padding: 40px 0; color: #918e8e; line-height: 25px;}
     .contact-1 p {font-size: 7px;}
     .contact-1 .p1 {font-size: 6px;}
     .banner .text {margin-top: 50px; text-align: center;}
-    .wrap-1 .best-treat h2 {font-size: 17px;}
+    .wrap-1 .best-treat h2 {font-size: 21px;}
     .wrap-1 .best-treat i {width: 70px; height: 70px; border-radius: 50%; background: #fff; font-size: 30px; color: #000; place-content: center;}
+    .professional{margin-top: 70px;}
     .professional i {width: 65px; height: 65px; font-size: 35px;}
     .professional h3 {font-size: 22px; margin-left: 11px;}
     .wrap-2 img {margin-left: -32px;}
@@ -266,17 +276,16 @@ footer{background: #1a1a1a; padding: 40px 0; color: #918e8e; line-height: 25px;}
     .wrap-2 .nurse{margin-left: 0; height:auto;}
     .wrap-2 .professional{text-align: center;}
     .professional .pro-1,.professional .pro-2,.professional .pro-3,.professional .pro-4{justify-content: center;}
-    .progress hr {margin-left: 25px;}
+    .progress{margin: 0;}
     .progress i {margin-top: 75px;}
     .progress h3 {margin-bottom: 45px;}
     .progress h3 {font-size: 20px;}
     .progress p {font-size: 45px;}
-    .progress hr {width: 75px; margin-left: 39px;}
+    .progress hr {width: 75px; margin: 0 auto;}
     .wrap-4 .col-8 .btn {margin: 53px 0 0 0;}
     .wrap-4 .two-img{display: block;}
     .wrap-4 .image-1 .p3 {margin-bottom: 30px;}
     .wrap-4 .col-8 .btn {margin: 23px 0 0 0;}
-    .wrap-6 .row-scnd{margin-bottom: 70px;}
     .wrap-6 .profile img {border-radius: 50%; width: 320px; height: 320px; object-fit: cover;}
     .wrap-7{padding: 45px 0 20px 0;}
     .wrap-7 .offer p{font-size: 15px; text-align: center;}
